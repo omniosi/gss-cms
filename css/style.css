@@ -169,10 +169,10 @@ body.layered #under{position:fixed}
 }
 #main-text-left,
 #main-text-right{
-	font: bold 1.125em/0.75em sans-serif;
+	/*font: bold 1.125em/0.75em sans-serif;*/
 	text-align: center;
 	text-transform: capitalize;
-	padding: 4em 0;
+	padding: 1.75em 0;
 	opacity: 0;
 	transition: opacity 0.5s;
 	-webkit-transition: opacity 0.5s;
@@ -202,7 +202,7 @@ p{
 	/*color: #fff;*/
 	position: fixed;
 	top: 50%;
-	width: 45%;
+	/*width: 45%;*/
 	height: 48%;
 	margin-top: -0.5em;
 	/*text-shadow: 1px 0px 3px rgba(0,177,235,0.35);*/
@@ -221,9 +221,11 @@ p{
 #right-btn.button{
 	/*color: #fff;*/
 	text-align: right !important;
-	width: 45%;
+	/*width: 45%;*/
 	/*width: 40%;*/
 	/*text-shadow: -1px 0px 3px rgba(0,177,235,0.35);*/
+	position: absolute;
+	right: 50px;
 }
 @-webkit-keyframes bounceleft{ 0%,100%{ -webkit-transform:translatex(0) } 50%{ -webkit-transform:translatex(-15px)} }
 @-moz-keyframes bounceleft{0%,100%{-moz-transform:translatex(0)}50%{-moz-transform:translatex(-15px)}}

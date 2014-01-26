@@ -53,7 +53,7 @@
 									<p><cms:editable name='preclinical_area3' label="Pre-Clinical Area 3" desc='Pre-Clinical Area 3 of 3' type='text'>Product Development</cms:editable></p>
 							</div>
 						</div>
-						<a href="html/preclinical/one.html" data-transition="slide" data-direction="reverse"><div id="left-btn" class="button"><i class="icon-chevron-left icon-4x"></i></div></a>
+						<a href="html/preclinical/one.php" data-transition="slide" data-direction="reverse"><div id="left-btn" class="button"><i class="icon-chevron-left icon-4x"></i></div></a>
 					</div><div class="main-right">
 						<div id="main-icon-right">
 							<div id="main-text-right" class="more">
