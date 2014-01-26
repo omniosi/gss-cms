@@ -161,6 +161,7 @@ body.layered #under{position:fixed}
   position: fixed;
   top: 50%;
   margin-top: -135px;
+  display: block;
 }
 #main-icon-left{
 	background: url("../img/tubes.gif");
@@ -175,6 +176,7 @@ body.layered #under{position:fixed}
 	opacity: 0;
 	transition: opacity 0.5s;
 	-webkit-transition: opacity 0.5s;
+	height: 270px;
 }
 .show{
 	opacity: 1 !important;

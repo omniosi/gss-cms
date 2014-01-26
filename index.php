@@ -33,7 +33,7 @@
 					<div id="logo" alt="GSS">
 						<img src="img/logo_gss_alt.png" alt="GSS logo" width="200" height="200">
 						<div id="swap">
-							<cms:editable name='main_content' type='richtext'>
+							<cms:editable name='intro_text' type='richtext'>
 							<p id="mission">We are a client-centric, global, retained search firm focused exclsively on the healthcare industry, fancy for “We put the right people with the right companies.”</p>
 						</cms:editable>
 							<p id="tagline">Search <span>&</span> Employ</p>
@@ -48,18 +48,18 @@
 					<div class="main-left">
 						<div id="main-icon-left">
 							<div id="main-text-left" class="more">
-								<p>Discovery</p>
-								<p>Pre Clinical</p>
-								<p>Product Development</p>
+									<p><cms:editable name='preclinical_area1' label="Pre-Clinical Area 1" desc='Pre-Clinical Area 1 of 3' type='text'>Discovery</cms:editable></p>
+									<p><cms:editable name='preclinical_area2' label="Pre-Clinical Area 2" desc='Pre-Clinical Area 2 of 3' type='text'>Pre Clinical</cms:editable></p>
+									<p><cms:editable name='preclinical_area3' label="Pre-Clinical Area 3" desc='Pre-Clinical Area 3 of 3' type='text'>Product Development</cms:editable></p>
 							</div>
 						</div>
 						<a href="html/preclinical/one.html" data-transition="slide" data-direction="reverse"><div id="left-btn" class="button"><i class="icon-chevron-left icon-4x"></i></div></a>
 					</div><div class="main-right">
 						<div id="main-icon-right">
 							<div id="main-text-right" class="more">
-								<p>Clinical Sciences</p>
-								<p>Medical Affairs</p>
-								<p>Drug safety</p>
+									<p><cms:editable name='clinical_area1' label="Clinical Area 1" desc='Clinical Area 1 of 3' type='text'>Clinical Sciences</cms:editable></p>
+									<p><cms:editable name='clinical_area2' label="Clinical Area 2" desc='Clinical Area 2 of 3' type='text'>Medical Affairs</cms:editable></p>
+									<p><cms:editable name='clinical_area3' label="Clinical Area 3" desc='Clinical Area 3 of 3' type='text'>Drug safety</cms:editable></p>
 							</div>
 						</div>
 						<a href="html/clinical/one.html" data-transition="slide"><div id="right-btn" class="button"><i class="icon-chevron-right icon-4x"></i></div></a>
