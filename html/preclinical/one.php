@@ -1,32 +1,26 @@
 <?php require_once( '../../couch/cms.php' ); ?>
-<cms:template title='GSS Pre-Clinical One' />
+<?php $current_page = 'p-one' ?>
+<cms:template title='GSS Pre-Clinical One' clonable='1' commentable='1'>
+
+	<cms:editable name='content_image' label='Image' desc='Accompanying image for main text' width='130' type='image' />
+	<cms:editable name='content_main' label='Main Text' desc='Main Text Area' type='richtext' />
+	<cms:editable name='content_sidebar_column_1' label='Sidebar Column One' desc='Sidebar Text Column One' type='richtext' />
+	<cms:editable name='content_sidebar_column_2' label='Sidebar Column Two' desc='Sidebar Text Column Two' type='richtext' />
+
+</cms:template>
 <!doctype html>
 
 <html>
 
-<head profile="http://www.w3.org/2005/10/profile">
+<?php include '../../inc/head.php'; ?>
 
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
-	<title>GSS</title>
-	<link href='http://fonts.googleapis.com/css?family=Crete+Round:400,400italic' rel='stylesheet' type='text/css'>
-	<!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile.structure-1.3.2.min.css"> -->
-  <link rel="stylesheet" href="../../lib/Font-Awesome/css/font-awesome.min.css">
-  <!--[if IE 7]>
-	  <link rel="stylesheet" href="../../lib/Font-Awesome/css/font-awesome-ie7.min.css">
-	<![endif]-->
-	<link rel="stylesheet" type="text/css" href="../../css/style.css">
-	<!-- <link rel="icon" type="image/png" href="img/o_favicon.png"> -->
-  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile.structure-1.3.2.min.css">
-  <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
-	<script type="text/javascript" src="../../js/jquery.webticker.js"></script>
-	<script src="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.js"></script>
-
-</head>
 
 <body>
 
-	<div id="left" data-role="page">
+<div id="left" data-role="page">
+
+<?php include '../../inc/header.php'; ?>
+<!-- 
 
 		<div class="container" data-role="content">
 			<div class="menu">
@@ -57,7 +51,7 @@
 					<span class="spinner"></span>
 				</span>
 			</div>
-		</div>
+		</div> -->
 
 		<div class="container" data-role="content">
 
@@ -70,17 +64,19 @@
 			</span>
 
 				<div class="col col-main">
-					<div class="illus"></div>
+					<img class="illus" src="<cms:show content_image />" alt="" width="130">
 					<div class="content">
-						<h1>It’s not rocket science...</h1>
+						<cms:show content_main />
+<!-- 						<h1>It’s not rocket science...</h1>
 						<p>But it’s pretty close. The Pharma/Biotech industry is a science-based marketplace, and a complex and highly specialized one at that. We’re talking about (and to) top-tier scientists and researchers and executives at the very highest levels who understand not just the scientific complexities of the industry but the regulatory-speak as well.</p>
 						<p>This is all pretty serious stuff, and, as such, we here at GSS focus on a few key practice areas. These include pre-clinical, clinical, and corporate/functional support lines along with Executive level placement, Board development and strategic Advisory team development. And we do so in a number of fields. You could say, we specialize in areas of specialization.</p>
-						<p class="links"><a href="#">Discovery Chemistry</a>, <a href="#">Biology</a>, <a href="#">Small and Large Molecule Pharmacology</a>, <a href="#">Leap Optimization</a>, <a href="#">DMPK including</a>, <a href="#">Toxicology</a>, <a href="#">Pathology</a>, <a href="#">LAR</a>, <a href="#">Quality Assurance</a>, <a href="#">Quality Control</a>, <a href="#">Regulatory Affairs</a>, <a href="#">Pharmaceutical Sciences &amp; Manufacturing</a>, <a href="#">Project Management</a>, <a href="#">Alliance Management</a></p>
+						<p class="links"><a href="#">Discovery Chemistry</a>, <a href="#">Biology</a>, <a href="#">Small and Large Molecule Pharmacology</a>, <a href="#">Leap Optimization</a>, <a href="#">DMPK including</a>, <a href="#">Toxicology</a>, <a href="#">Pathology</a>, <a href="#">LAR</a>, <a href="#">Quality Assurance</a>, <a href="#">Quality Control</a>, <a href="#">Regulatory Affairs</a>, <a href="#">Pharmaceutical Sciences &amp; Manufacturing</a>, <a href="#">Project Management</a>, <a href="#">Alliance Management</a></p> -->
 					</div>
 				</div>
 				<div class="col secondary">
 					<div class="col-side">
-						<h1>Therapeutic Expertise:</h1>
+						<cms:show content_sidebar_column_1 />
+<!-- 						<h1>Therapeutic Expertise:</h1>
 						<ul>
 							<li>Oncology</li>
 							<li>Hematology</li>
@@ -108,18 +104,20 @@
 							<li>Nephrology</li> 
 							<li>Transplantation</li> 
 							<li>Pain</li>			
-						</ul>
+						</ul> -->
 					</div>
 					<div class="col-side">
-						<h1>GSS NEWS</h1>
+						<cms:show content_sidebar_column_2 />
+<!-- 						<h1>GSS NEWS</h1>
 						<p>This is where all the GSS news is updated. You can click through to see current searches, finished placements, or monthly or quarterly newsletters. it is more in depth than the scroll on the bottom of the page. This is where all the GSS news is updated. You can click through to see current <a class="more" href="#">more</a></p>
-						<p>This is where all the GSS news is updated. You can click through to see current searches, finished placements, or monthly or quarterly newsletters. it is more in depth than the scroll on the bottom of the page. This is where all the GSS news is updated.<a class="more" href="#">more</a></p>
+						<p>This is where all the GSS news is updated. You can click through to see current searches, finished placements, or monthly or quarterly newsletters. it is more in depth than the scroll on the bottom of the page. This is where all the GSS news is updated.<a class="more" href="#">more</a></p> -->
 					</div>
 				</div>
 			</div>
 		</div>
 
-			<div class="footer">
+<?php include '../../inc/footer.php'; ?>
+<!-- 			<div class="footer">
 
 				<ul id="rssticker">
 					<li id='item1'>European and US groups agree to share data but with restrictions</li>
@@ -165,7 +163,7 @@
 					</ul>
 					<p class="legal">© 2010 Global Search Solutions, LLC. All rights reserved.</p>
 				</div>
-			</div>
+			</div> -->
 	</div> <!-- page 2 (left) -->
 
 	<script type="text/javascript" src="../js/script.js"></script>

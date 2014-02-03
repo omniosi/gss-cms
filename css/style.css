@@ -676,16 +676,16 @@ margin: 0 10px 0 0;
 
 }
 #left .illus{
-	background: url(../img/img-rocket.jpg) top left no-repeat;
-	background-size: 130px 150px;
+	/*background: url(../img/img-rocket.jpg) top left no-repeat;*/
+	/*background-size: 130px 150px;*/
 	width: 130px;
-	height: 150px;
+	/*height: 150px;*/
 }
 #left.p2 .illus{
-	background: url(../img/img-boutique.jpg) top left no-repeat;
-	background-size: 130px 129px;
-	width: 130px;
-	height: 129px;
+	/*background: url(../img/img-boutique.jpg) top left no-repeat;*/
+	/*background-size: 130px 129px;*/
+	/*width: 130px;*/
+	/*height: 129px;*/
 }
 #right .illus{
 	background: url(../img/img-needle.png) top left no-repeat;
