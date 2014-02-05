@@ -1,6 +1,6 @@
 <?php require_once( '../../couch/cms.php' ); ?>
 <?php $current_page = 'p-one' ?>
-<cms:template title='GSS Pre-Clinical One' clonable='1' commentable='1'>
+<cms:template title='GSS Pre-Clinical One' commentable='1'>
 
 	<cms:editable name='content_image' label='Image' desc='Accompanying image for main text' width='130' type='image' />
 	<cms:editable name='content_main' label='Main Text' desc='Main Text Area' type='richtext' />
@@ -58,7 +58,7 @@
 			<div class="main">
 
 			<span class="contentnav left col">
- 				<a href="two.html" data-transition="slide" data-direction="reverse">
+ 				<a href="two.php" data-transition="slide" data-direction="reverse">
 					<i class="icon-chevron-left icon-4x"></i>
 				</a>
 			</span>

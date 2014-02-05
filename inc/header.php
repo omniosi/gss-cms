@@ -6,22 +6,22 @@
       if( $current_page === 'p-one' ){
         echo '<li>Areas &amp; Expertise</li>';
       }else{
-        echo '<li><a href="one.html">Areas &amp; Expertise</a></li>';
+        echo '<li><a href="one.php">Areas &amp; Expertise</a></li>';
       }
       if( $current_page === 'p-two' ){
         echo '<li>About</li>';
       }else{
-        echo '<li><a href="two.html">About</a></li>';
+        echo '<li><a href="two.php">About</a></li>';
       }
       if( $current_page === 'p-three' ){
         echo '<li>Projects &amp; Testimonials</li>';
       }else{
-        echo '<li><a href="three.html">Projects &amp; Testimonials</a></li>';
+        echo '<li><a href="three.php">Projects &amp; Testimonials</a></li>';
       }
       if( $current_page === 'p-four' ){
         echo '<li>Contact &amp; Resources</li>';
       }else{
-        echo '<li><a href="four.html">Contact &amp; Resources</a></li>';
+        echo '<li><a href="four.php">Contact &amp; Resources</a></li>';
       }
     ?>
     <li><a href="../../" data-transition="slidedown">Home</a></li>
