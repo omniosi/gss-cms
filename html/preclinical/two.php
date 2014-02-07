@@ -22,7 +22,7 @@
 			<div class="main">
 
 			<span class="contentnav left col">
- 				<a href="three.html" data-transition="slide" data-direction="reverse">
+ 				<a href="three.php" data-transition="slide" data-direction="reverse">
 					<i class="icon-chevron-left icon-4x"></i>
 				</a>
 			</span>
