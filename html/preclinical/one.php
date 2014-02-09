@@ -85,7 +85,7 @@
 
 		<?php include '../../inc/footer.php'; ?>
 
-	</div> <!-- page 2 (left) -->
+	</div> <!-- page 1 (left) -->
 
 </body>
 

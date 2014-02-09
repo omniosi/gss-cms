@@ -72,7 +72,7 @@
 			</div>
 
 		<!-- </div> -->
-	</div> <!-- page 1 (home) -->
+	</div> <!-- home page -->
 
 	<script type="text/javascript" src="js/script.js"></script>
 
