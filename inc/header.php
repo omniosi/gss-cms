@@ -55,12 +55,12 @@
                 $current_page === 'p-two' || 
               $current_page === 'p-three' || 
                $current_page === 'p-four' ){
-      echo '<li>preclinical</li><a href="../clinical/one.html" data-transition="slide"><li class="righty">clinical</li></a>';
+      echo '<li>preclinical</li><a href="../clinical/one.php" data-transition="slide"><li class="righty">clinical</li></a>';
       }else if( $current_page === 'c-one' || 
                 $current_page === 'c-two' || 
               $current_page === 'c-three' || 
                $current_page === 'c-four' ){
-       echo '<a href="../preclinical/one.html" data-transition="slide" data-direction="reverse"><li class="lefty">preclinical</li></a><li>clinical</li>';
+       echo '<a href="../preclinical/one.php" data-transition="slide" data-direction="reverse"><li class="lefty">preclinical</li></a><li>clinical</li>';
       } ?>
 
      </ul>
