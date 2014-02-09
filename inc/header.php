@@ -33,16 +33,36 @@
     <a href="../../" data-transition="slidedown" class="home-btn"></a>
     <div class="title">
      Preclinical & Product Development<br>
-     <span>Practice Areas &amp; Theraputic Expertise</span>
+     <?php if( $current_page === 'p-one' || 
+               $current_page === 'c-one' ){
+      echo '<span>Practice Areas &amp; Theraputic Expertise</span>';
+     }else if($current_page === 'p-two' || 
+              $current_page === 'c-two' ){
+      echo '<span>About Us</span>';
+     }else if($current_page === 'p-three' || 
+              $current_page === 'c-three' ){
+      echo '<span>Recent Projects &amp; Testimonials</span>';
+     }else if($current_page === 'p-four' || 
+              $current_page === 'c-four' ){
+      echo '<span>Contact &amp; Candidate Resources</span>';
+     } ?>
+
     </div>
     
     <span class="sign-post">
      <ul>
-      <li>
-       preclinical
-      </li><a href="../clinical/one.html" data-transition="slide"><li class="righty">
-       clinical
-      </li></a>
+      <?php if( $current_page === 'p-one' || 
+                $current_page === 'p-two' || 
+              $current_page === 'p-three' || 
+               $current_page === 'p-four' ){
+      echo '<li>preclinical</li><a href="../clinical/one.html" data-transition="slide"><li class="righty">clinical</li></a>';
+      }else if( $current_page === 'c-one' || 
+                $current_page === 'c-two' || 
+              $current_page === 'c-three' || 
+               $current_page === 'c-four' ){
+       echo '<a href="../preclinical/one.html" data-transition="slide" data-direction="reverse"><li class="lefty">preclinical</li></a><li>clinical</li>';
+      } ?>
+
      </ul>
      <span class="spinner"></span>
     </span>
