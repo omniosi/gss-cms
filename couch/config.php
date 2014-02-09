@@ -11,7 +11,8 @@
     // 1.
     // If neccesary, define the full URL of your site including the subdomain, if any.
     // V.IMP: Don't forget the trailing slash!
-    //define( 'K_SITE_URL', 'http://www.test.com/subfolder1/subfolder2/mysite/' ); 
+    // define( 'K_SITE_URL', 'http://www.test.com/subfolder1/subfolder2/mysite/' ); 
+    // define( 'K_SITE_URL', 'http://gss-cms:8888/' ); 
 
     // 1b.
     // For security purpose, the 'index.php' file of Couch can be renamed to anything else.
@@ -30,7 +31,7 @@
     // -4.5   Venezuela (UTC-04:30)
     // -6     United States (Central Time) (UTC-06:00)
     // -8     United States (Pacific Time) (UTC-08:00)
-    define( 'K_GMT_OFFSET', +5.5 );
+    define( 'K_GMT_OFFSET', -6 );
 
     // 3.
     // Define the charset used by your site. If in any doubt, leave the default utf-8.
@@ -88,7 +89,7 @@
 
     // 13.
     // Your Email address. Will be used in contact forms.
-    define( 'K_EMAIL_TO', 'youremail@gmail.com' );
+    define( 'K_EMAIL_TO', 'omniosi@gmail.com' );
 
     // 14.
     // Will be used as the sender of messages delivered by contact forms to the address above.

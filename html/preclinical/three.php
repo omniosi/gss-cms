@@ -1,21 +1,21 @@
 <?php require_once( '../../couch/cms.php' ); ?>
 <?php $current_page = 'p-three' ?>
-<cms:template title='GSS Pre-Clinical Three' commentable='1'>
-	<cms:editable name='group_column1' label='First Column' desc='First column of logos' type='group' />
-	<cms:editable name='logo_one' label='Logo One' desc='First image in column one' width='135' group='group_column1' type='image' />
-	<cms:editable name='logo_two' label='Logo Two' desc='Second image in column one' width='135' group='group_column1' type='image' />
-	<cms:editable name='logo_three' label='Logo Three' desc='Third image in column one' width='135' group='group_column1' type='image' />
-	<cms:editable name='logo_four' label='Logo Four' desc='Fourth image in column one' width='135' group='group_column1' type='image' />
-	<cms:editable name='logo_five' label='Logo Five' desc='Fifth image in column one' width='135' group='group_column1' type='image' />
-	<cms:editable name='logo_six' label='Logo Six' desc='Sixth image in column one' width='135' group='group_column1' type='image' />
+<cms:template title='GSS Pre-Clinical Three'>
+	<cms:editable name='column1' label='First Column' desc='First column of logos' type='group' />
+	<cms:editable name='logo_one' label='Logo One' desc='First image in column one' width='135' group='column1' type='image' />
+	<cms:editable name='logo_two' label='Logo Two' desc='Second image in column one' width='135' group='column1' type='image' />
+	<cms:editable name='logo_three' label='Logo Three' desc='Third image in column one' width='135' group='column1' type='image' />
+	<cms:editable name='logo_four' label='Logo Four' desc='Fourth image in column one' width='135' group='column1' type='image' />
+	<cms:editable name='logo_five' label='Logo Five' desc='Fifth image in column one' width='135' group='column1' type='image' />
+	<cms:editable name='logo_six' label='Logo Six' desc='Sixth image in column one' width='135' group='column1' type='image' />
 
-	<cms:editable name='group_column2' label='Second Column' desc='Second column of logos' type='group' />
-	<cms:editable name='logoB_one' label='Logo One' desc='First image in column two' width='135' group='group_column2' type='image' />
-	<cms:editable name='logoB_two' label='Logo Two' desc='Second image in column two' width='135' group='group_column2' type='image' />
-	<cms:editable name='logoB_three' label='Logo Three' desc='Third image in column two' width='135' group='group_column2' type='image' />
-	<cms:editable name='logoB_four' label='Logo Four' desc='Fourth image in column two' width='135' group='group_column2' type='image' />
-	<cms:editable name='logoB_five' label='Logo Five' desc='Fifth image in column two' width='135' group='group_column2' type='image' />
-	<cms:editable name='logoB_six' label='Logo Six' desc='Sixth image in column two' width='135' group='group_column2' type='image' />
+	<cms:editable name='column2' label='Second Column' desc='Second column of logos' type='group' />
+	<cms:editable name='logoB_one' label='Logo One' desc='First image in column two' width='135' group='column2' type='image' />
+	<cms:editable name='logoB_two' label='Logo Two' desc='Second image in column two' width='135' group='column2' type='image' />
+	<cms:editable name='logoB_three' label='Logo Three' desc='Third image in column two' width='135' group='column2' type='image' />
+	<cms:editable name='logoB_four' label='Logo Four' desc='Fourth image in column two' width='135' group='column2' type='image' />
+	<cms:editable name='logoB_five' label='Logo Five' desc='Fifth image in column two' width='135' group='column2' type='image' />
+	<cms:editable name='logoB_six' label='Logo Six' desc='Sixth image in column two' width='135' group='column2' type='image' />
 
 	<cms:editable name='content_main' label='Main Text' desc='Main Text Area' type='richtext' />
 	<cms:editable name='content_sidebar_column_1' label='Sidebar Column One' desc='Sidebar Text Column One' type='richtext' />

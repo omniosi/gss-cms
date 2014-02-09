@@ -1,5 +1,9 @@
 <?php require_once( 'couch/cms.php' ); ?>
-<cms:template title='GSS home' />
+<?php $current_page = 'Home Page' ?>
+<cms:template title='GSS home'>
+	<cms:editable name='preclinical_areas' label='Preclinical Areas' desc='3 Preclinical Areas of Expertise' type='group' />
+	<cms:editable name='clinical_areas' label='Clinical Areas' desc='3 Clinical Areas of Expertise' type='group' />
+</cms:template>
 <!doctype html>
 
 <html>
@@ -48,18 +52,18 @@
 					<div class="main-left">
 						<div id="main-icon-left">
 							<div id="main-text-left" class="more">
-									<p><cms:editable name='preclinical_area1' label="Pre-Clinical Area 1" desc='Pre-Clinical Area 1 of 3' type='text'>Discovery</cms:editable></p>
-									<p><cms:editable name='preclinical_area2' label="Pre-Clinical Area 2" desc='Pre-Clinical Area 2 of 3' type='text'>Pre Clinical</cms:editable></p>
-									<p><cms:editable name='preclinical_area3' label="Pre-Clinical Area 3" desc='Pre-Clinical Area 3 of 3' type='text'>Product Development</cms:editable></p>
+									<p><cms:editable name='preclinical_area1' label="Pre-Clinical Area 1" desc='Pre-Clinical Area 1 of 3' group='preclinical_areas' type='text'>Discovery</cms:editable></p>
+									<p><cms:editable name='preclinical_area2' label="Pre-Clinical Area 2" desc='Pre-Clinical Area 2 of 3' group='preclinical_areas' type='text'>Pre Clinical</cms:editable></p>
+									<p><cms:editable name='preclinical_area3' label="Pre-Clinical Area 3" desc='Pre-Clinical Area 3 of 3' group='preclinical_areas' type='text'>Product Development</cms:editable></p>
 							</div>
 						</div>
 						<a href="html/preclinical/one.php" data-transition="slide" data-direction="reverse"><div id="left-btn" class="button"><i class="icon-chevron-left icon-4x"></i></div></a>
 					</div><div class="main-right">
 						<div id="main-icon-right">
 							<div id="main-text-right" class="more">
-									<p><cms:editable name='clinical_area1' label="Clinical Area 1" desc='Clinical Area 1 of 3' type='text'>Clinical Sciences</cms:editable></p>
-									<p><cms:editable name='clinical_area2' label="Clinical Area 2" desc='Clinical Area 2 of 3' type='text'>Medical Affairs</cms:editable></p>
-									<p><cms:editable name='clinical_area3' label="Clinical Area 3" desc='Clinical Area 3 of 3' type='text'>Drug safety</cms:editable></p>
+									<p><cms:editable name='clinical_area1' label="Clinical Area 1" desc='Clinical Area 1 of 3' group='clinical_areas' type='text'>Clinical Sciences</cms:editable></p>
+									<p><cms:editable name='clinical_area2' label="Clinical Area 2" desc='Clinical Area 2 of 3' group='clinical_areas' type='text'>Medical Affairs</cms:editable></p>
+									<p><cms:editable name='clinical_area3' label="Clinical Area 3" desc='Clinical Area 3 of 3' group='clinical_areas' type='text'>Drug safety</cms:editable></p>
 							</div>
 						</div>
 						<a href="html/clinical/one.html" data-transition="slide"><div id="right-btn" class="button"><i class="icon-chevron-right icon-4x"></i></div></a>

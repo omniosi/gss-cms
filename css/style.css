@@ -761,6 +761,13 @@ label.ui-input-text{
 	-webkit-margin-after: 0.5em;
 
 }
+/*form validation styles*/
+.error{
+	border: solid 1px red;
+}
+.success{
+	border: solid 1px green;
+}
 
 /*
  *	mobile breakpoint

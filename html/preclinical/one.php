@@ -1,6 +1,6 @@
 <?php require_once( '../../couch/cms.php' ); ?>
 <?php $current_page = 'p-one' ?>
-<cms:template title='GSS Pre-Clinical One' commentable='1'>
+<cms:template title='GSS Pre-Clinical One'>
 
 	<cms:editable name='content_image' label='Image' desc='Accompanying image for main text' width='130' type='image' />
 	<cms:editable name='content_main' label='Main Text' desc='Main Text Area' type='richtext' />
