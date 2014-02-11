@@ -18,7 +18,7 @@
 			<div class="main">
 
 			<span class="contentnav left col">
- 				<a href="one.php" data-transition="slide" data-direction="reverse">
+ 				<a href="areas-expertise.php" data-transition="slide" data-direction="reverse">
 					<i class="icon-chevron-left icon-4x"></i>
 				</a>
 			</span>
@@ -71,9 +71,7 @@
 
 		<?php include '../../inc/footer.php'; ?>
 
-	</div> <!-- page 4 (right) -->
-
-<!--	<script type="text/javascript" src="../../js/script.js"></script> -->
+	</div> <!-- page 4 (left) -->
 	
 </body>
 

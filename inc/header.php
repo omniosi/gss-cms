@@ -6,22 +6,22 @@
       if( $current_page === 'p-one' || $current_page === 'c-one' ){
         echo '<li>Areas &amp; Expertise</li>';
       }else{
-        echo '<li><a href="one.php">Areas &amp; Expertise</a></li>';
+        echo '<li><a href="areas-expertise.php">Areas &amp; Expertise</a></li>';
       }
       if( $current_page === 'p-two' || $current_page === 'c-two' ){
         echo '<li>About</li>';
       }else{
-        echo '<li><a href="two.php">About</a></li>';
+        echo '<li><a href="about.php">About</a></li>';
       }
       if( $current_page === 'p-three' || $current_page === 'c-three' ){
         echo '<li>Projects &amp; Testimonials</li>';
       }else{
-        echo '<li><a href="three.php">Projects &amp; Testimonials</a></li>';
+        echo '<li><a href="projects-testimonials.php">Projects &amp; Testimonials</a></li>';
       }
       if( $current_page === 'p-four' || $current_page === 'c-four' ){
         echo '<li>Contact &amp; Resources</li>';
       }else{
-        echo '<li><a href="four.php">Contact &amp; Resources</a></li>';
+        echo '<li><a href="contact-resources.php">Contact &amp; Resources</a></li>';
       }
     ?>
     <li><a href="../../" data-transition="slidedown">Home</a></li>
@@ -55,12 +55,12 @@
                 $current_page === 'p-two' || 
               $current_page === 'p-three' || 
                $current_page === 'p-four' ){
-      echo '<li>preclinical</li><a href="../clinical/one.php" data-transition="slide"><li class="righty">clinical</li></a>';
+      echo '<li>preclinical</li><a href="../clinical/areas-expertise.php" data-transition="slide"><li class="righty">clinical</li></a>';
       }else if( $current_page === 'c-one' || 
                 $current_page === 'c-two' || 
               $current_page === 'c-three' || 
                $current_page === 'c-four' ){
-       echo '<a href="../preclinical/one.php" data-transition="slide" data-direction="reverse"><li class="lefty">preclinical</li></a><li>clinical</li>';
+       echo '<a href="../preclinical/areas-expertise.php" data-transition="slide" data-direction="reverse"><li class="lefty">preclinical</li></a><li>clinical</li>';
       } ?>
 
      </ul>

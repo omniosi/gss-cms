@@ -76,7 +76,7 @@
 				</div>
 
 				<span class="contentnav right col">
-					<a href="two.php" data-transition="slide">
+					<a href="about.php" data-transition="slide">
 						<i class="icon-chevron-right icon-4x"></i>
 					</a>
 				</span>

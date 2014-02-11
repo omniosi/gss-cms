@@ -1,6 +1,6 @@
 <?php require_once( '../../couch/cms.php' ); ?>
-<?php $current_page = 'p-three' ?>
-<cms:template title='GSS Pre-Clinical Three'>
+<?php $current_page = 'c-three' ?>
+<cms:template title='GSS Clinical Three'>
 	<cms:editable name='column1' label='First Column' desc='First column of logos' type='group' />
 	<cms:editable name='logo_one' label='Logo One' desc='First image in column one' width='135' group='column1' type='image' />
 	<cms:editable name='logo_two' label='Logo Two' desc='Second image in column one' width='135' group='column1' type='image' />
@@ -17,9 +17,7 @@
 	<cms:editable name='logoB_five' label='Logo Five' desc='Fifth image in column two' width='135' group='column2' type='image' />
 	<cms:editable name='logoB_six' label='Logo Six' desc='Sixth image in column two' width='135' group='column2' type='image' />
 
-
-
-</cms:template>
+	</cms:template>
 <!doctype html>
 
 <html>
@@ -28,19 +26,12 @@
 
 <body>
 
-	<div id="left" class="p3" data-role="page">
+	<div id="right" class="p3" data-role="page">
 
 <?php include '../../inc/header.php'; ?>
 
 		<div class="container">
 			<div class="main">
-
-				<span class="contentnav left col">
-	 				<a href="four.php" data-transition="slide" data-direction="reverse">
-						<i class="icon-chevron-left icon-4x"></i>
-					</a>
-				</span>
-
 				<div class="col col-main">
 					<ul class="logobox">
 						<li class="col-two">
@@ -92,13 +83,11 @@
 						<p>Vice President, In Vivo Pharmacology</p>
 						<a href="#">more</a>
 						</cms:editable>
-
 					</div>
 				</div>
 				<div class="col secondary">
 
 					<div class="col col-side">
-
 						<cms:editable name='content_sidebar_column_1' label='Sidebar Column One' desc='Sidebar Text Column One' type='richtext'>
 						<h1>And People We Owe Thank-you Notes</h1>
 						<p class="quotes">“We determined after seeing a few candidates that our priorities were different than we had first envisioned. With GSS, we made adjustments and brought in the right person for the job soon after.”
@@ -114,15 +103,21 @@
 							<em class="credits">--Henry Blair,<br>Former CEO at Dyax</em>
 						</p>
 						</cms:editable>
-
 					</div>
 				</div>
+
+				<span class="contentnav right col">
+					<a href="contact-resources.php" data-transition="slide">
+						<i class="icon-chevron-right icon-4x"></i>
+					</a>
+				</span>
+
 			</div>
 		</div>
 
 <?php include '../../inc/footer.php'; ?>
 
-	</div> <!-- page 3 (left) -->
+	</div> <!-- page 3 (right) -->
 
 </body>
 
