@@ -4,25 +4,25 @@
   <label for="name">Name</label>
   <cms:input type="text" name="name" id="name" required='1' data-role='none' /><br>
   <cms:if k_error_name>
-   <p id='name_error'>Enter a name</p><br>
+   <p id='name_error' class="error">Enter a name</p><br>
   </cms:if>
   
   <label for="email">Email</label>
   <cms:input type="text" name="email" id="email" required='1' validator='email' data-role='none' /><br>
   <cms:if k_error_email>
-   <p id='email_error'>Enter a valid email address</p><br>
+   <p id='email_error' class="error">Enter a valid email address</p><br>
   </cms:if>
   
   <label for="phone">Phone</label>
   <cms:input type="text" name="phone" id="phone" validator='integer | exact_len=10' data-role='none' /><br>
   <cms:if k_error_phone>
-   <p id='phone_error'>Enter a valid phone number</p><br>
+   <p id='phone_error' class="error">Enter a valid phone number</p><br>
   </cms:if>
   
   <label for="message">Message</label>
   <cms:input type="textarea" name="message" id="message" required='1' data-role='none'></cms:input>
   <cms:if k_error_message>
-   <p id='message_error'>Enter a message</p><br>
+   <p id='message_error' class="error">Enter a message</p><br>
   </cms:if>
 
   <cms:if k_success>

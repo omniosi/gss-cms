@@ -788,7 +788,14 @@ input[type="submit"]:active{
 }
 /*form validation styles*/
 .error{
-	border: solid 1px red;
+	color: white;
+	background: red;
+	/*border: solid 1px red;*/
+	text-align: center;
+	padding: 0.5em;
+}
+p.error{
+	/*color: red;*/
 }
 .success{
 	border: solid 1px green;
