@@ -20,6 +20,7 @@
 				<div class="col col-main">
 
 					<?php include '../../inc/form.php'; ?> 
+					<?php // include '../../inc/former.php'; ?> 
 
 					<div class="content">
 						<cms:editable name='content_main' label='Main Text' desc='Main Text Area' type='richtext'>

@@ -1,25 +1,26 @@
+<?php // require_once('../../couch/cms.php'); ?>
 <cms:form action='' method='post' id='contact_form'>
- <div>
-  <label for="fullname">Name</label>
-  <cms:input type="text" name="fullname" id="fullname" required='1' /><br>
+ <!-- <div> -->
+  <label for="name">Name</label>
+  <cms:input type="text" name="name" id="name" required='1' data-role='none' /><br>
   <cms:if k_error_name>
    <p id='name_error'>Enter a name</p><br>
   </cms:if>
   
   <label for="email">Email</label>
-  <cms:input type="text" name="email" id="email" required='1' validator='email' /><br>
+  <cms:input type="text" name="email" id="email" required='1' validator='email' data-role='none' /><br>
   <cms:if k_error_email>
    <p id='email_error'>Enter a valid email address</p><br>
   </cms:if>
   
   <label for="phone">Phone</label>
-  <cms:input type="text" name="phone" id="phone" required='1' validator='integer | exact_len=10' /><br>
+  <cms:input type="text" name="phone" id="phone" validator='integer | exact_len=10' data-role='none' /><br>
   <cms:if k_error_phone>
    <p id='phone_error'>Enter a valid phone number</p><br>
   </cms:if>
   
   <label for="message">Message</label>
-  <cms:input type="textarea" name="message" id="message" required='1'></cms:input>
+  <cms:input type="textarea" name="message" id="message" required='1' data-role='none'></cms:input>
   <cms:if k_error_message>
    <p id='message_error'>Enter a message</p><br>
   </cms:if>
@@ -35,7 +36,9 @@
   <!-- <p id='mail_fail'>Sorry, an error has occurred. Please try again later.</p> -->
 
   <div id='button'>
-   <input type='submit' id='send_message' value='Submit' />
+   <!-- <cms:input type='submit' name='submit' id='send_message' value='Submit' /> -->
+   <input type='submit' name='submit' id='send_message' value='Submit' data-role='none' />
   </div>
- </div>
+ <!-- </div> -->
 </cms:form>
+<?php // COUCH::invoke(); ?> 

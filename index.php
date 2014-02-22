@@ -66,7 +66,7 @@
 									<p><cms:editable name='clinical_area3' label="Clinical Area 3" desc='Clinical Area 3 of 3' group='clinical_areas' type='text'>Drug safety</cms:editable></p>
 							</div>
 						</div>
-						<a href="select/clinical/areas-expertise.html" data-transition="slide"><div id="right-btn" class="button"><i class="icon-chevron-right icon-4x"></i></div></a>
+						<a href="select/clinical/areas-expertise.php" data-transition="slide"><div id="right-btn" class="button"><i class="icon-chevron-right icon-4x"></i></div></a>
 					</div>
 				</div>
 			</div>

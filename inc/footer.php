@@ -45,5 +45,3 @@
    <p class="legal">© 2010 Global Search Solutions, LLC. All rights reserved.</p>
   </div>
 </div>
-
-<script type="text/javascript" src="../js/jquery.webticker.js"></script>
