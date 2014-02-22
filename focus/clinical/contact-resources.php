@@ -1,5 +1,6 @@
 <?php require_once('../../couch/cms.php'); ?>
 <?php $current_page = 'c-four' ?>
+<?php $focus = 'Clinical' ?>
 <cms:template title='GSS Clinical Four'>
 </cms:template>
 <!doctype html>

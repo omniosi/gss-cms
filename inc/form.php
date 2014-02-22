@@ -29,7 +29,8 @@
    <p id='mail_success'>Thank you. We'll get back to you as soon as possible.</p>
 
    <cms:send_mail from=k_email_from to=k_email_to subject='Feedback from your site'>
-    The following is an email sent by a visitor to your site:
+    The following is an email sent by a visitor to your <?php echo $focus; ?>
+ site:
     <cms:show k_success />
    </cms:send_mail>
   </cms:if>

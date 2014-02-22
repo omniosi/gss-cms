@@ -1,5 +1,6 @@
 <?php require_once('../../couch/cms.php'); ?>
 <?php $current_page = 'p-four' ?>
+<?php $focus = 'Preclinical' ?>
 <cms:template title='GSS Pre-Clinical Four'>
 </cms:template>
 <!doctype html>
@@ -73,7 +74,7 @@
 
 	</div> <!-- page 4 (left) -->
 	<script type="text/javascript">
-		
+
 	</script>
 </body>
 
