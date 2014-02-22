@@ -12,7 +12,7 @@ $(function(){
 	});
 
   $('#intro').bind('click',function(event){ 
-      $('html, body').stop().animate({
+   $('html, body').stop().animate({
 				scrollTop:$("#intro").height()+30
 			},500,"swing")
   });
@@ -89,7 +89,7 @@ $(function(){
 		});	
 	}
 	
-	// tickerStart();
+	tickerStart();
 
 	$(document).on('pagebeforeshow', function(event){
 		// $('#rssticker').slideUp(1);

@@ -710,9 +710,13 @@ margin: 0 10px 0 0;
 .contentnav.right{
 	right: 20px;
 }
+form{
+	-webkit-margin-before: 0.67em;
+}
 form label,
 form input,
 input.ui-input-text,
+textarea,
 textarea.ui-input-text{
 	width: 70% !important;
 	display: inline-block !important;
@@ -722,6 +726,7 @@ textarea.ui-input-text{
 }
 form input,
 input.ui-input-text,
+textarea,
 textarea.ui-input-text{
 	background: #D8EDFD;
 	width: 100%;
@@ -729,16 +734,36 @@ textarea.ui-input-text{
 	border-left: 2px solid #0062A7;
 	border-bottom: 2px solid #78c0f7;
 	border-right: 2px solid #78c0f7;
+	font-size: 1.25em;
+	padding: 0.5em;
+	color: #0062A7;
 }
+textarea,
 textarea.ui-input-text{
 	resize: none;
-	width: 73% !important;
+	/*width: 73% !important;*/
 	height: 100px !important;
 }
 form label,
 label.ui-input-text{
-	width: 20% !important;
+	width: 15% !important;
 	vertical-align: top;
+	padding: 0.5em 2.5%;
+}
+input[type="submit"]{
+	background: #0062A7;
+	color: white;
+	border-top: 2px solid #78c0f7;
+	border-left: 2px solid #78c0f7;
+	/*border-bottom: 2px solid #0062A7;*/
+	/*border-right: 2px solid #0062A7;*/
+	border-bottom: 2px solid #000;
+	border-right: 2px solid #000;
+	margin-left: 21%;
+	width: 73% !important;
+}
+input[type="submit"]:active{
+	background: #000;
 }
 #left.p4 .content,
 #right.p4 .content{

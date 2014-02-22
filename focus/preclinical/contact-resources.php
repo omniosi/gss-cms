@@ -72,7 +72,9 @@
 		<?php include '../../inc/footer.php'; ?>
 
 	</div> <!-- page 4 (left) -->
-	
+	<script type="text/javascript">
+		
+	</script>
 </body>
 
 </html>
