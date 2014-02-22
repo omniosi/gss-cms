@@ -1,6 +1,6 @@
 <?php require_once('../../couch/cms.php'); ?>
-<?php $current_page = 'c-four' ?>
-<cms:template title='GSS Clinical Four'>
+<?php $current_page = 'p-four' ?>
+<cms:template title='GSS Pre-Clinical Four'>
 </cms:template>
 <!doctype html>
 
@@ -10,19 +10,25 @@
 
 <body>
 
-	<div id="right" class="p4" data-role="page">
+	<div id="left" class="p4" data-role="page">
 
 <?php include '../../inc/header.php'; ?>
 
 		<div class="container">
 			<div class="main">
 
+			<span class="contentnav left col">
+ 				<a href="areas-expertise.php" data-transition="slide" data-direction="reverse">
+					<i class="icon-chevron-left icon-4x"></i>
+				</a>
+			</span>
+
 				<div class="col col-main">
 
 					<?php include '../../inc/form.php'; ?> 
-					<?php // include '../../inc/former.php'; ?> 
 
 					<div class="content">
+
 						<cms:editable name='content_main' label='Main Text' desc='Main Text Area' type='richtext'>
 						<h1>As a service provider, we are happy to offer the following tools that can be helpful to candidates preparing for success in the job search process:
 						</h1>
@@ -56,23 +62,17 @@
 								<a href="#">Download PDF</a>
 							</li>
 						</ul>
-					</cms:editable>
+						</cms:editable>
+
 					</div>
 				</div>
-
-				<span class="contentnav right col">
-					<a href="areas-expertise.php" data-transition="slide">
-						<i class="icon-chevron-right icon-4x"></i>
-					</a>
-				</span>
-
 			</div>
 		</div>
 
 		<?php include '../../inc/footer.php'; ?>
 
-	</div> <!-- page 4 (right) -->
-
+	</div> <!-- page 4 (left) -->
+	
 </body>
 
 </html>

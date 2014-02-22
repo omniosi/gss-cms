@@ -57,7 +57,7 @@
 									<p><cms:editable name='preclinical_area3' label="Pre-Clinical Area 3" desc='Pre-Clinical Area 3 of 3' group='preclinical_areas' type='text'>Product Development</cms:editable></p>
 							</div>
 						</div>
-						<a href="select/preclinical/areas-expertise.php" data-transition="slide" data-direction="reverse"><div id="left-btn" class="button"><i class="icon-chevron-left icon-4x"></i></div></a>
+						<a href="focus/preclinical/areas-expertise.php" data-transition="slide" data-direction="reverse"><div id="left-btn" class="button"><i class="icon-chevron-left icon-4x"></i></div></a>
 					</div><div class="main-right">
 						<div id="main-icon-right">
 							<div id="main-text-right" class="more">
@@ -66,7 +66,7 @@
 									<p><cms:editable name='clinical_area3' label="Clinical Area 3" desc='Clinical Area 3 of 3' group='clinical_areas' type='text'>Drug safety</cms:editable></p>
 							</div>
 						</div>
-						<a href="select/clinical/areas-expertise.php" data-transition="slide"><div id="right-btn" class="button"><i class="icon-chevron-right icon-4x"></i></div></a>
+						<a href="focus/clinical/areas-expertise.php" data-transition="slide"><div id="right-btn" class="button"><i class="icon-chevron-right icon-4x"></i></div></a>
 					</div>
 				</div>
 			</div>
