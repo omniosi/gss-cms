@@ -1,4 +1,3 @@
-<?php // require_once('../../couch/cms.php'); ?>
 <cms:form action='' method='post' id='contact_form'>
  <!-- <div> -->
   <label for="name">Name</label>
@@ -42,4 +41,3 @@
   </div>
  <!-- </div> -->
 </cms:form>
-<?php // COUCH::invoke(); ?> 

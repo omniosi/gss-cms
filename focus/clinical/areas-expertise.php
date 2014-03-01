@@ -68,9 +68,15 @@
 					</div>
 					<div class="col-side">
 						<cms:editable name='content_sidebar_column_2' label='Sidebar Column Two' desc='Sidebar Text Column Two' type='richtext'>
-						<h1>GSS NEWS</h1>
-						<p>This is where all the GSS news is updated. You can click through to see current searches, finished placements, or monthly or quarterly newsletters. it is more in depth than the scroll on the bottom of the page. This is where all the GSS news is updated.<a class="more" href="#">more</a></p>
-						<p>This is where all the GSS news is updated. You can click through to see current searches, finished placements, or monthly or quarterly newsletters. it is more in depth than the scroll on the bottom of the page. This is where all the GSS news is updated.<a class="more" href="#">more</a></p>
+						<ul>
+							<li>
+								<h1>GSS NEWS</h1>
+								<p>This is where all the GSS news is updated. You can click through to see current searches, finished placements, or monthly or quarterly newsletters. it is more in depth than the scroll on the bottom of the page. This is where all the GSS news is updated.<a class="more" href="#">more</a></p>
+							</li>
+							<li>
+								<p>This is where all the GSS news is updated. You can click through to see current searches, finished placements, or monthly or quarterly newsletters. it is more in depth than the scroll on the bottom of the page. This is where all the GSS news is updated.<a class="more" href="#">more</a></p>
+							</li>
+					</ul>
 					</cms:editable>
 					</div>
 				</div>

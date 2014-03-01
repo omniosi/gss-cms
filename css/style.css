@@ -325,9 +325,9 @@ p{
 	width: 40%;
 }
 .more{
-	display: block;
-	padding-top: 0.5em;
-	text-align: right;
+	/*display: block;*/
+	/*padding-top: 0.5em;*/
+	/*text-align: right;*/
 }
 .col-btn{
 	width: 1%;
@@ -799,6 +799,13 @@ p.error{
 }
 .success{
 	border: solid 1px green;
+}
+.morecontent span{
+	display: none;
+}
+.morelink{
+	display: block;
+	text-align: right;
 }
 
 /*

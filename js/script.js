@@ -1,4 +1,4 @@
-$(function(){
+$(document).ready(function(){
 	responsive();
 
 	$('#tagline').fadeOut(1);
@@ -74,47 +74,52 @@ $(function(){
 		responsive()
 	});
 
-	// ticker tricks
-
-	$('#rssticker').css({
-		"opacity":0,
-		"height":"30px"
-	});
-
-	function tickerStart(){
-		console.log("ticker start fired.");
-		$('#rssticker').webTicker({
-					// rssurl: 'http://www.searchgss.com/rss',
-					rssfrequency: 1
-		});	
+	if( $('#mail_success') ){
+		console.log("#mail_success shown");
+		$('input').attr("value","");
+		$('textarea').html("");
 	}
-	
-	tickerStart();
 
-	$(document).on('pagebeforeshow', function(event){
-		// $('#rssticker').slideUp(1);
-	});
+	// code for more button functionality
+	var showChar = 200;
+	var ellipsestext = "...";
+	var moretext = "more";
+	var lesstext = "less";
+	$('.more').each(function(){
+		var content = $(this).html();
 
-	$(document).on('pageshow', function(event){
-	 	console.log("page show fired!");
+		if(content.length > showChar){
+			var c = content.substr(0,showChar);
+			var h = content.substr(showChar-1, content.length - showChar);
 
-		var ticker = document.getElementsByClassName("tickercontainer");
-		console.log("ticker = "+ticker);
-		console.log("ticker length = "+ticker.length);
-		tickerStart();
-		if(ticker.length != 0){
-			$('#rssticker').css({
-				// "display":"none"
-				"opacity":100,
-				"height":"100%"
-			});
+			var html = c + '<span class="moreellipses">' + ellipsestext + '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="javascript:void(0);" class="morelink">' + moretext + '</a></span>';
+
+			$(this).html(html);
 		}
-
-		// $('#rssticker').slideDown();
 	});
 
-	$('#result').live("pageinit", function(){ // or pageshow
-	    // your dom manipulations here
+	$('.morelink').on('click', function(){
+		if($(this).hasClass('less')){
+			$(this).removeClass('less');
+			$(this).html(moretext);
+		}else{
+			$(this).addClass('less');
+			$(this).html(lesstext);
+		}
+		$(this).parent().prev().toggle();
+		$(this).prev().toggle();
+		return false;
+
 	});
 
 });
+
+function tickerStart(){
+	console.log("ticker start fired.");
+	$('#rssticker').webTicker({
+				// rssurl: 'http://www.searchgss.com/rss',
+				rssfrequency: 1
+	});	
+}
+
+tickerStart();
