@@ -545,6 +545,9 @@ a.home-btn{
 /*
  *	webTicker styles
  */
+#rssticker{
+	display:none;
+}
 .tickercontainer { /* the outer div */
 	background: #D8EDFD;
 	/*background: #fff;*/
@@ -556,7 +559,7 @@ a.home-btn{
 	/*height: 38px; */
 	margin: 0; 
 	padding: 1em 0;
-	overflow: hidden; 
+	overflow: hidden;
 }
 #right .tickercontainer { /* the outer div */
 	color: #0a62a7;

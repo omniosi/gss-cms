@@ -1,5 +1,6 @@
 $(document).ready(function(){
 	responsive();
+	// tickerStart();
 
 	$('#tagline').fadeOut(1);
 	$('#direction').hover(function(){
@@ -18,7 +19,6 @@ $(document).ready(function(){
   });
 
   // hover effects
-	// $('#under>div').hover(
 	$('#main-icon-left,#main-icon-right').hover(
 		function(){ 
 			$(this).find('.more').addClass('show'); 
@@ -27,6 +27,7 @@ $(document).ready(function(){
 			$(this).find('.more').removeClass('show'); 
 		}
 	);
+
 
 	function responsive(){
 		winw=$(window).width();
@@ -70,15 +71,40 @@ $(document).ready(function(){
 		}
 	}
 
+	// function tickerStart(){
+	// 	console.log("ticker start fired.");
+	// 	$('#rssticker').webTicker({
+	// 				// rssurl: 'http://www.searchgss.com/rss',
+	// 				rssfrequency: 1
+	// 	});	
+	// }
+
 	$(window).resize(function(){
 		responsive()
 	});
 
-	if( $('#mail_success') ){
-		console.log("#mail_success shown");
-		$('input').attr("value","");
-		$('textarea').html("");
-	}
+	// if( $('#mail_success') ){
+	// 	console.log("#mail_success shown");
+	// 	$('input').attr("value","");
+	// 	$('textarea').html("");
+	// }
+
+	// $('#rssticker').webTicker();
+
+});
+
+
+// tickerStart();
+
+$(document).on('pageinit', function(event){
+ // console.log("ticker start fired.");
+ // $('#rssticker').webTicker(); 
+ // $(this).webTicker(); 
+
+	// $('#rssticker').each(function(){
+	//  console.log("webTicker fired.");
+	// 	$(this).webTicker();
+	// });
 
 	// code for more button functionality
 	var showChar = 200;
@@ -89,6 +115,7 @@ $(document).ready(function(){
 		var content = $(this).html();
 
 		if(content.length > showChar){
+			// console.log("this text is "+content.length + " > the limit of " + showChar);
 			var c = content.substr(0,showChar);
 			var h = content.substr(showChar-1, content.length - showChar);
 
@@ -113,13 +140,3 @@ $(document).ready(function(){
 	});
 
 });
-
-function tickerStart(){
-	console.log("ticker start fired.");
-	$('#rssticker').webTicker({
-				// rssurl: 'http://www.searchgss.com/rss',
-				rssfrequency: 1
-	});	
-}
-
-tickerStart();

@@ -1,3 +1,5 @@
+<!-- <script type="text/javascript" src="../../js/jquery.webticker.js"></script>-->
+
 <div class="footer">
 
   <ul id="rssticker">
@@ -47,5 +49,23 @@
 </div>
 
 <script type="text/javascript">
-  // $().hasClass()
+
+  // function tickerStart(){
+  //   console.log("ticker start fired.");
+  //   $('#rssticker').webTicker({
+  //         // rssurl: 'http://www.searchgss.com/rss',
+  //         rssfrequency: 1
+  //   }); 
+  // }
+
+  // tickerStart();
+
+  // $('#rssticker').on('pageinit',function(event){
+  // $(document).on('pageinit','#rssticker', function(event){
+  //   console.log("ticker start fired.");
+  //   $('#rssticker').webTicker(); 
+  //   // $(this).webTicker(); 
+  // });
+
+
 </script>

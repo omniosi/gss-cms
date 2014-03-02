@@ -86,7 +86,10 @@
 		<?php include '../../inc/footer.php'; ?>
 
 	</div> <!-- page 1 (left) -->
-
+	
+	<script type="text/javascript">
+			$('#rssticker').webTicker();
+	</script>
 </body>
 
 </html>

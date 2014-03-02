@@ -55,14 +55,14 @@
 
 						<cms:editable name='content_sidebar_column_1' label='Sidebar Column One' desc='Sidebar Text Column One' type='richtext'>
 						<h1>Who Makes GSS, GSS</h1>
-						<p>Christian Camp –<br>
-							Bio to follow<a class="more" href="#">more</a></p>
-						<p>Brian Harrington -<br>
-							Bio to follow<a class="more" href="#">more</a></p>
-						<p>Spencer Weneck –<br>
-							Bio to follow<a class="more" href="#">more</a></p>
-						<p>Peter Tomassi –<br>
-							Bio to follow<a class="more" href="#">more</a></p>
+						<p class="more">Christian Camp –<br>
+							Bio to follow</p>
+						<p class="more">Brian Harrington -<br>
+							Bio to follow</p>
+						<p class="more">Spencer Weneck –<br>
+							Bio to follow</p>
+						<p class="more">Peter Tomassi –<br>
+							Bio to follow</p>
 						</cms:editable>
 
 					</div>
