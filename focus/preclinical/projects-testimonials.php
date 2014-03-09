@@ -32,7 +32,7 @@
 
 <?php include '../../inc/header.php'; ?>
 
-		<div class="container">
+		<div class="container pagecontent">
 			<div class="main">
 
 				<span class="contentnav left col">

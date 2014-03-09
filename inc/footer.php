@@ -1,8 +1,6 @@
-<!-- <script type="text/javascript" src="../../js/jquery.webticker.js"></script>-->
-
 <div class="footer">
 
-  <ul id="rssticker">
+  <ul class="rssticker">
    <li id='item1'>European and US groups agree to share data but with restrictions</li>
    <li id='item2'>GSK reviews policies for sales staff in China</li>
    <li id='item3'>GSK admits wrongdoing in China</li>
@@ -47,25 +45,3 @@
    <p class="legal">© 2010 Global Search Solutions, LLC. All rights reserved.</p>
   </div>
 </div>
-
-<script type="text/javascript">
-
-  // function tickerStart(){
-  //   console.log("ticker start fired.");
-  //   $('#rssticker').webTicker({
-  //         // rssurl: 'http://www.searchgss.com/rss',
-  //         rssfrequency: 1
-  //   }); 
-  // }
-
-  // tickerStart();
-
-  // $('#rssticker').on('pageinit',function(event){
-  // $(document).on('pageinit','#rssticker', function(event){
-  //   console.log("ticker start fired.");
-  //   $('#rssticker').webTicker(); 
-  //   // $(this).webTicker(); 
-  // });
-
-
-</script>

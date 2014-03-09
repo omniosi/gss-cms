@@ -13,11 +13,11 @@
 
 <body>
 
-<div id="left" data-role="page">
+<div id="left" class="pageone" data-role="page">
 
 	<?php include '../../inc/header.php'; ?>
 
-		<div class="container">
+		<div class="container pagecontent">
 
 			<div class="main">
 
@@ -87,9 +87,6 @@
 
 	</div> <!-- page 1 (left) -->
 	
-	<script type="text/javascript">
-			$('#rssticker').webTicker();
-	</script>
 </body>
 
 </html>

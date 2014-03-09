@@ -30,7 +30,7 @@
 
 <?php include '../../inc/header.php'; ?>
 
-		<div class="container">
+		<div class="container pagecontent">
 			<div class="main">
 				<div class="col col-main">
 					<ul class="logobox">

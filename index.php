@@ -75,9 +75,6 @@
 	</div> <!-- home page -->
 
 	<script type="text/javascript" src="js/script.js"></script>
-	<script type="text/javascript">
-			$('#rssticker').webTicker();
-	</script>
 
 </body>
 

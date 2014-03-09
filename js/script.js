@@ -1,6 +1,5 @@
 $(document).ready(function(){
 	responsive();
-	// tickerStart();
 
 	$('#tagline').fadeOut(1);
 	$('#direction').hover(function(){
@@ -71,16 +70,36 @@ $(document).ready(function(){
 		}
 	}
 
-	// function tickerStart(){
-	// 	console.log("ticker start fired.");
-	// 	$('#rssticker').webTicker({
-	// 				// rssurl: 'http://www.searchgss.com/rss',
-	// 				rssfrequency: 1
-	// 	});	
-	// }
+		function tickerStart(){
+			console.log("ticker start fired.");
+			$('.rssticker').css({
+				display:'block'
+			});
+			$('.rssticker').webTicker({
+				moving: true,
+				startEmpty: true,
+				// rssurl: 'http://www.searchgss.com/rss',
+				// rssfrequency: 1,
+				updatetype: "reset"
+			});
+
+			// $('.rssticker').each(function(){
+			// 	$(this).css({display:'block'});
+			// 	$(this).webTicker({
+			// 		moving: true,
+			// 		startEmpty: true,
+			// 		// rssurl: 'http://www.searchgss.com/rss',
+			// 		// rssfrequency: 1,
+			// 		updatetype: "reset"
+			// 	});
+			// 	console.log("ticker start fired.");
+			// });
+
+		}
 
 	$(window).resize(function(){
-		responsive()
+		responsive();
+		footermove();
 	});
 
 	// if( $('#mail_success') ){
@@ -89,54 +108,72 @@ $(document).ready(function(){
 	// 	$('textarea').html("");
 	// }
 
-	// $('#rssticker').webTicker();
+	// move the footer to the bottom of the page if the content doesn't fill the page
+	function footermove(){
+		console.log("window height = "+$(window).height());
+		var	contentheight = $('.menubar').height() + $('.titlebar').height() + $('.pagecontent').height() + $('.footer').height() + 150;
+		console.log("content height = "+contentheight);
 
-});
-
-
-// tickerStart();
-
-$(document).on('pageinit', function(event){
- // console.log("ticker start fired.");
- // $('#rssticker').webTicker(); 
- // $(this).webTicker(); 
-
-	// $('#rssticker').each(function(){
-	//  console.log("webTicker fired.");
-	// 	$(this).webTicker();
-	// });
-
-	// code for more button functionality
-	var showChar = 200;
-	var ellipsestext = "...";
-	var moretext = "more";
-	var lesstext = "less";
-	$('.more').each(function(){
-		var content = $(this).html();
-
-		if(content.length > showChar){
-			// console.log("this text is "+content.length + " > the limit of " + showChar);
-			var c = content.substr(0,showChar);
-			var h = content.substr(showChar-1, content.length - showChar);
-
-			var html = c + '<span class="moreellipses">' + ellipsestext + '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="javascript:void(0);" class="morelink">' + moretext + '</a></span>';
-
-			$(this).html(html);
-		}
-	});
-
-	$('.morelink').on('click', function(){
-		if($(this).hasClass('less')){
-			$(this).removeClass('less');
-			$(this).html(moretext);
+		if( contentheight < $(window).height() ){
+			$('.footer').css({
+				position: 'absolute',
+				bottom: 0
+			});
 		}else{
-			$(this).addClass('less');
-			$(this).html(lesstext);
+			$('.footer').css({
+				position: 'relative',
+				bottom: 'auto'
+			});
+
 		}
-		$(this).parent().prev().toggle();
-		$(this).prev().toggle();
-		return false;
+	}
+
+	footermove();
+
+	$(document).on('pageinit', function(event){
+		// footermove();
+		// tickerStart();
+
+
+		// code for more button functionality
+		var showChar = 200;
+		var ellipsestext = "...";
+		var moretext = "more";
+		var lesstext = "less";
+		$('.more').each(function(){
+			var content = $(this).html();
+
+			if(content.length > showChar){
+				// console.log("this text is "+content.length + " > the limit of " + showChar);
+				var c = content.substr(0,showChar);
+				var h = content.substr(showChar-1, content.length - showChar);
+
+				var html = c + '<span class="moreellipses">' + ellipsestext + '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="javascript:void(0);" class="morelink">' + moretext + '</a></span>';
+
+				$(this).html(html);
+			}
+		});
+
+		$('.morelink').on('click', function(){
+			if($(this).hasClass('less')){
+				$(this).removeClass('less');
+				$(this).html(moretext);
+			}else{
+				$(this).addClass('less');
+				$(this).html(lesstext);
+			}
+			$(this).parent().prev().toggle();
+			$(this).prev().toggle();
+			return false;
+		});
 
 	});
+
+	$(document).on('pageshow', function(event){
+		tickerStart();
+				footermove();
+
+	});
+
 
 });

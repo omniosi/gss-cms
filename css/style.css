@@ -495,10 +495,9 @@ a.home-btn{
  *	footer
  */
  .footer{
- 	/* width: 960px; */
-/* 	position: absolute;
- 	bottom: 0;
- 	width: 100%;*/
+ 	/*position: absolute;*/
+ 	/*bottom: 0;*/
+ 	width: 100%;
  }
 .contact{
 	padding: 3%;
@@ -545,8 +544,10 @@ a.home-btn{
 /*
  *	webTicker styles
  */
-#rssticker{
+.rssticker{
 	display:none;
+	width:100%;
+	/*width:960px;*/
 }
 .tickercontainer { /* the outer div */
 	background: #D8EDFD;
@@ -554,9 +555,9 @@ a.home-btn{
 	/*color: #fff;*/
 	border-top: 1px solid #0a62a7;
 	border-bottom: 1px solid #0a62a7;
+	width: 100%; 
 	/*width: 960px; */
-	/*width: 930px; */
-	/*height: 38px; */
+	/*float: left;*/
 	margin: 0; 
 	padding: 1em 0;
 	overflow: hidden;

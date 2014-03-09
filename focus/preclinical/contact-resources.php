@@ -28,7 +28,7 @@
 
 					<?php include '../../inc/form.php'; ?> 
 
-					<div class="content">
+					<div class="content pagecontent">
 
 						<cms:editable name='content_main' label='Main Text' desc='Main Text Area' type='richtext'>
 						<h1>As a service provider, we are happy to offer the following tools that can be helpful to candidates preparing for success in the job search process:

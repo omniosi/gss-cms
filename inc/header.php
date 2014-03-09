@@ -1,5 +1,5 @@
 
-  <div class="container" data-role="content">
+  <div class="container menubar" data-role="content">
    <div class="menu">
 
     <?php
