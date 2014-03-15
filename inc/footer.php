@@ -1,6 +1,8 @@
+<?php //require_once( 'couch/cms.php' ); ?>
 <div class="footer">
 
   <ul class="rssticker">
+    <cms:editable name="ticker" desc="NOTE: this is the common ticker info for all pages. a change made on this page affects ALL of the pages." type="richtext">
    <li id='item1'>European and US groups agree to share data but with restrictions</li>
    <li id='item2'>GSK reviews policies for sales staff in China</li>
    <li id='item3'>GSK admits wrongdoing in China</li>
@@ -25,6 +27,7 @@
    <li id='item10'>
     My Tenth News Item
    </li>
+ </cms:editable>
   </ul>
 
   <div class="contact">
@@ -45,3 +48,4 @@
    <p class="legal">© 2010 Global Search Solutions, LLC. All rights reserved.</p>
   </div>
 </div>
+<?php //COUCH::invoke(); ?>
