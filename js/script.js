@@ -36,6 +36,11 @@ $(document).ready(function(){
 			$("#intro").css({height:winh})
 			$(".main-left,.main-right").css({height:winh})
 			$("#under").css({"min-height":winh})
+			var	contentheight = $('.menubar').height() + $('.titlebar').height() + $('.pagecontent').height() + $('.footer').height() + 150;
+			if(contentheight < winh){
+				$("#left").css({height:winh});
+				$("#right").css({height:winh});
+			}
 		}else{
 			$("#intro").css({height:320})
 		}
@@ -71,7 +76,7 @@ $(document).ready(function(){
 	}
 
 		function tickerStart(){
-			console.log("ticker start fired.");
+			//console.log("ticker start fired.");
 			$('.rssticker').css({
 				display:'block'
 			});
@@ -82,19 +87,6 @@ $(document).ready(function(){
 				// rssfrequency: 1,
 				updatetype: "reset"
 			});
-
-			// $('.rssticker').each(function(){
-			// 	$(this).css({display:'block'});
-			// 	$(this).webTicker({
-			// 		moving: true,
-			// 		startEmpty: true,
-			// 		// rssurl: 'http://www.searchgss.com/rss',
-			// 		// rssfrequency: 1,
-			// 		updatetype: "reset"
-			// 	});
-			// 	console.log("ticker start fired.");
-			// });
-
 		}
 
 	$(window).resize(function(){
@@ -110,9 +102,9 @@ $(document).ready(function(){
 
 	// move the footer to the bottom of the page if the content doesn't fill the page
 	function footermove(){
-		console.log("window height = "+$(window).height());
+		//console.log("window height = "+$(window).height());
 		var	contentheight = $('.menubar').height() + $('.titlebar').height() + $('.pagecontent').height() + $('.footer').height() + 150;
-		console.log("content height = "+contentheight);
+		//console.log("content height = "+contentheight);
 
 		if( contentheight < $(window).height() ){
 			$('.footer').css({
@@ -170,9 +162,10 @@ $(document).ready(function(){
 	});
 
 	$(document).on('pageshow', function(event){
+		responsive();
 		tickerStart();
-				footermove();
-
+		footermove();
+		$('#tagline').fadeOut(1);
 	});
 
 
